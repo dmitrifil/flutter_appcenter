@@ -8,20 +8,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92e73688-9a95-4abc-a208-492bee5b3667" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/example_lib_main_dart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/example_lib_main_dart.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/user/.android/avd/Nexus_4_API_29.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[af0b90bf0521]" />
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -59,65 +65,19 @@
       <option name="presentableId" value="Default" />
       <updated>1592274918778</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1653054469824</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653054469824</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="617" y="294" key="#PSD" timestamp="1592796870579">
-      <screen x="0" y="23" width="1792" height="1097" />
-    </state>
-    <state x="617" y="294" key="#PSD/0.23.1792.1097@0.23.1792.1097" timestamp="1592796870579" />
-    <state x="780" y="290" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1592275165764">
-      <screen x="0" y="23" width="1792" height="1097" />
-    </state>
-    <state x="780" y="290" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1592275165764" />
-    <state x="933" y="174" key="CommitChangelistDialog2" timestamp="1592735283136">
-      <screen x="0" y="23" width="1792" height="1097" />
-    </state>
-    <state x="933" y="174" key="CommitChangelistDialog2/0.23.1792.1097@0.23.1792.1097" timestamp="1592735283136" />
-    <state width="1750" height="302" key="GridCell.Tab.0.bottom" timestamp="1592801957249">
-      <screen x="0" y="23" width="1792" height="1097" />
-    </state>
-    <state width="1750" height="302" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1592801957249" />
-    <state width="1750" height="302" key="GridCell.Tab.0.center" timestamp="1592801957249">
-      <screen x="0" y="23" width="1792" height="1097" />
-    </state>
-    <state width="1750" height="302" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1592801957249" />
-    <state width="1750" height="302" key="GridCell.Tab.0.left" timestamp="1592801957249">
-      <screen x="0" y="23" width="1792" height="1097" />
-    </state>
-    <state width="1750" height="302" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1592801957249" />
-    <state width="1750" height="302" key="GridCell.Tab.0.right" timestamp="1592801957249">
-      <screen x="0" y="23" width="1792" height="1097" />
-    </state>
-    <state width="1750" height="302" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1592801957249" />
-    <state width="1750" height="372" key="GridCell.Tab.1.bottom" timestamp="1592754607754">
-      <screen x="0" y="23" width="1792" height="1097" />
-    </state>
-    <state width="1750" height="372" key="GridCell.Tab.1.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1592754607754" />
-    <state width="1750" height="372" key="GridCell.Tab.1.center" timestamp="1592754607754">
-      <screen x="0" y="23" width="1792" height="1097" />
-    </state>
-    <state width="1750" height="372" key="GridCell.Tab.1.center/0.23.1792.1097@0.23.1792.1097" timestamp="1592754607754" />
-    <state width="1750" height="372" key="GridCell.Tab.1.left" timestamp="1592754607754">
-      <screen x="0" y="23" width="1792" height="1097" />
-    </state>
-    <state width="1750" height="372" key="GridCell.Tab.1.left/0.23.1792.1097@0.23.1792.1097" timestamp="1592754607754" />
-    <state width="1750" height="372" key="GridCell.Tab.1.right" timestamp="1592754607754">
-      <screen x="0" y="23" width="1792" height="1097" />
-    </state>
-    <state width="1750" height="372" key="GridCell.Tab.1.right/0.23.1792.1097@0.23.1792.1097" timestamp="1592754607754" />
-    <state x="0" y="23" width="1792" height="1097" key="SettingsEditor" timestamp="1592881935523">
-      <screen x="0" y="23" width="1792" height="1097" />
-    </state>
-    <state x="0" y="23" width="1792" height="1097" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1592881935523" />
-    <state x="114" y="123" width="1578" height="897" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1592881777865">
-      <screen x="0" y="23" width="1792" height="1097" />
-    </state>
-    <state x="114" y="123" width="1578" height="897" key="com.android.tools.idea.avdmanager.AvdListDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1592881777865" />
-    <state x="568" y="266" key="run.anything.popup" timestamp="1592881776803">
-      <screen x="0" y="23" width="1792" height="1097" />
-    </state>
-    <state x="568" y="266" key="run.anything.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1592881776803" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

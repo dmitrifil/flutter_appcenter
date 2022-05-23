@@ -78,10 +78,18 @@ class _MainState extends State<Main> {
   }
 }
 
+class Handler extends UpdateHandler {
+  @override
+  Future<void> handle({void Function(int, int)? onReceiveProgress}) {
+    return Future.value();
+  }
+}
+
 Future<bool> checkForUpdate(BuildContext context) async{
   return await FlutterAppCenter.checkForUpdate( 
     context,
-    downloadUrlAndroid: '',
+    Handler(),
+    // downloadUrlAndroid: '',
     dialog: {
       'title': 'App Update Avaiable',
       'subTitle': 'Enjoy the lastest version',
