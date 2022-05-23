@@ -172,6 +172,7 @@ class FlutterAppCenter {
       if (dialogUpdateSingle == null) {
         dialogUpdateSingle = await showDialog(
             context: context,
+            barrierDismissible: (_requestResult['mandatory_update'] != true),
             builder: (BuildContext ctx) {
               return UpdateDialog(
                 mandatoryUpdate: _requestResult['mandatory_update'],
