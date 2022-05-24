@@ -10,16 +10,17 @@ import com.microsoft.appcenter.distribute.UpdateTrack;
 
 import java.util.Map;
 
+import io.flutter.embedding.engine.plugins.FlutterPlugin;
+import io.flutter.embedding.engine.plugins.activity.ActivityAware;
+import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding;
+
+import io.flutter.plugin.common.BinaryMessenger;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
-import io.flutter.plugin.common.PluginRegistry.Registrar;
 
-/**
- * FlutterBuglyPlugin
- */
-public class FlutterAppcenterPlugin implements MethodCallHandler {
+public class FlutterAppcenterPlugin implements MethodCallHandler, FlutterPlugin, ActivityAware {
     private Activity activity;
     private Result result;
 
@@ -28,6 +29,15 @@ public class FlutterAppcenterPlugin implements MethodCallHandler {
     private String updateDialogDetail;
     private String updateDialogConfirm;
     private String updateDialogCancel;
+
+    public FlutterAppcenterPlugin() {
+        this.activity = null;
+        this.updateDialogTitle = "Update";
+        this.updateDialogSubTitle = "";
+        this.updateDialogDetail = "";
+        this.updateDialogConfirm = "Confirm";
+        this.updateDialogCancel = "Cancel";
+    }
 
     public FlutterAppcenterPlugin(Activity activity) {
         this.activity = activity;
@@ -38,15 +48,34 @@ public class FlutterAppcenterPlugin implements MethodCallHandler {
         this.updateDialogCancel = "Cancel";
     }
 
-    /**
-     * Plugin registration.
-     */
-    public static void registerWith(Registrar registrar) {
-        final MethodChannel channel = new MethodChannel(registrar.messenger(), "flutter_appcenter");
-        FlutterAppcenterPlugin plugin = new FlutterAppcenterPlugin(registrar.activity());
-        channel.setMethodCallHandler(plugin);
+    @Override
+    public void onAttachedToEngine(FlutterPluginBinding binding) {
+        final MethodChannel channel = new MethodChannel(binding.getBinaryMessenger(), "flutter_appcenter");
+        channel.setMethodCallHandler(this);
+    }
 
-        // Distribute.setListener(plugin);
+    @Override
+    public void onDetachedFromEngine(FlutterPluginBinding binding) {
+    }
+
+    @Override
+    public void onAttachedToActivity(ActivityPluginBinding binding) {
+        activity = binding.getActivity();
+    }
+
+    @Override
+    public void onDetachedFromActivityForConfigChanges() {
+        activity = null;
+    }
+    @Override
+    public void onReattachedToActivityForConfigChanges(
+            ActivityPluginBinding binding
+    ) {
+        activity = binding.getActivity();
+    }
+    @Override
+    public void onDetachedFromActivity() {
+        activity = null;
     }
 
     @Override
@@ -92,10 +121,14 @@ public class FlutterAppcenterPlugin implements MethodCallHandler {
             }
 
             if(call.hasArgument("appSecret")) {
-                String appSecret = call.argument("appSecret").toString();
+                if (activity != null) {
+                    String appSecret = call.argument("appSecret").toString();
 
-                AppCenter.start(activity.getApplication(), appSecret, Analytics.class, Crashes.class, Distribute.class);
-                result.success("1");
+                    AppCenter.start(activity.getApplication(), appSecret, Analytics.class, Crashes.class, Distribute.class);
+                    result.success("1");
+                } else {
+                    result.success('0');
+                }
             }else {
                 result.success("0");
             }

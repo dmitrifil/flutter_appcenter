@@ -2,7 +2,7 @@ name: flutter_appcenter
 description: Support Android/iOS to Build, Test, and Distribute, Analytics and Diagnostics services.
 version: 1.0.11
 # author: https://github.com/mxc-foundation
-homepage: https://github.com/mxc-foundation/flutter_appcenter
+homepage: https://github.com/dmitrifil/flutter_appcenter
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
