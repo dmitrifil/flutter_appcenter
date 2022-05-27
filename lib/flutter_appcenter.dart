@@ -130,8 +130,8 @@ class FlutterAppCenter {
       }
     }
 
-    void checkUpdateForAndroid() async {
-      await handler.handle(onReceiveProgress: onProgress);
+    void checkUpdateForAndroid(String downloadUrl) async {
+      await handler.handle(downloadUrl: downloadUrl, onReceiveProgress: onProgress);
       if (_dialogKey.currentContext != null)
         Navigator.of(_dialogKey.currentContext!).pop();
     }
@@ -158,7 +158,7 @@ class FlutterAppCenter {
       }
     }
 
-    void showUpdateDialog() async {
+    void showUpdateDialog(String downloadUrl) async {
       String? content = '';
       dialog['subTitle'] = dialog['subTitle']! +
           ' ${_requestResult['short_version']}(${_requestResult['version']})';
@@ -213,7 +213,7 @@ class FlutterAppCenter {
                     ),
                   );
                   if (Platform.isAndroid) {
-                    checkUpdateForAndroid();
+                    checkUpdateForAndroid(downloadUrl);
                   } else {
                     Navigator.of(_dialogKey.currentContext!).pop();
                     checkUpdateAppForIOS();
@@ -243,6 +243,8 @@ class FlutterAppCenter {
     print(
         'remote version: ${_requestResult['short_version']}+${_requestResult['version']}');
 
+    final String downloadUrl = _requestResult["download_url"];
+
     /// step 3: compare the app's verion and build number with the remote's
     if (_version != _requestResult['short_version']) {
       List<String> versionArr = _version.split('.');
@@ -251,13 +253,13 @@ class FlutterAppCenter {
 
       for (int i = 0; i < remoteVersionArr.length; i++) {
         if (int.parse(remoteVersionArr[i]) > int.parse(versionArr[i])) {
-          showUpdateDialog();
+          showUpdateDialog(downloadUrl);
           return true;
         }
       }
     } else if (_buildNumber != _requestResult['version'] &&
         int.parse(_requestResult['version']) > int.parse(_buildNumber)) {
-      showUpdateDialog();
+      showUpdateDialog(downloadUrl);
       return true;
     }
 

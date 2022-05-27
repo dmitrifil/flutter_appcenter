@@ -6,7 +6,7 @@ import 'configs.dart';
 import 'update_handler.dart';
 
 class GooglePlayUpdateHandler extends UpdateHandler {
-  Future<void> handle({void Function(int, int)? onReceiveProgress}) async {
+  Future<void> handle({required String downloadUrl, void Function(int, int)? onReceiveProgress}) async {
     final packageInfo = await PackageInfo.fromPlatform();
     try {
       LaunchReview.launch(

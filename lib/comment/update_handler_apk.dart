@@ -13,9 +13,9 @@ import 'update_handler.dart';
 // IT VIOLATES GOOGLE PLAY RULES
 
 class ApkUpdateHandler extends UpdateHandler {
-  final String downloadUrl;
+  // final String downloadUrl;
 
-  ApkUpdateHandler(this.downloadUrl);
+  // ApkUpdateHandler(this.downloadUrl);
 
   Future<File> download(String url,
       {void Function(int, int)? onReceiveProgress}) async {
@@ -42,7 +42,7 @@ class ApkUpdateHandler extends UpdateHandler {
   }
 
   @override
-  Future<void> handle({void Function(int, int)? onReceiveProgress}) async {
+  Future<void> handle({required String downloadUrl, void Function(int, int)? onReceiveProgress}) async {
     final file =
         await download(downloadUrl, onReceiveProgress: onReceiveProgress);
     final packageInfo = await PackageInfo.fromPlatform();

@@ -1,3 +1,3 @@
 abstract class UpdateHandler {
-  Future<void> handle({void Function(int, int)? onReceiveProgress});
+  Future<void> handle({required String downloadUrl, void Function(int, int)? onReceiveProgress});
 }

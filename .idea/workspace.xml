@@ -9,15 +9,17 @@
   <component name="ChangeListManager">
     <list default="true" id="92e73688-9a95-4abc-a208-492bee5b3667" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/comment/update_handler.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/comment/update_handler.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/comment/update_handler_apk.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/comment/update_handler_apk.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/comment/update_handler_google_play.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/comment/update_handler_google_play.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/flutter_appcenter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_appcenter.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[af0b90bf0521]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/user/.android/avd/Nexus_4_API_29.avd]" />
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -25,6 +27,17 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/lib/comment/update_handler.dart" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lib/comment/update_handler_apk.dart" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lib/comment/install_app.dart" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lib/comment/update_handler_google_play.dart" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../../../flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-6.1.2/lib/src/legacy_api.dart" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/.idea/workspace.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../../../flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-6.1.2/lib/url_launcher.dart" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lib/flutter_appcenter.dart" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/../../../flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-6.1.2/lib/src/url_launcher_uri.dart" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1dNoTSbfCnxaaXulKkzPo3dqgqQ" />
   <component name="ProjectViewState">
