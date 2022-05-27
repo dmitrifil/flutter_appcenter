@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:flutter_appcenter/flutter_appcenter.dart';
+import 'package:flutter_appcenter/flutter_appcenter_apk.dart';
 import 'package:package_info/package_info.dart';
 
 void main() {
@@ -78,17 +78,17 @@ class _MainState extends State<Main> {
   }
 }
 
-class Handler extends UpdateHandler {
-  @override
-  Future<void> handle({void Function(int, int)? onReceiveProgress}) {
-    return Future.value();
-  }
-}
+// class Handler extends UpdateHandler {
+//   @override
+//   Future<void> handle({void Function(int, int)? onReceiveProgress}) {
+//     return Future.value();
+//   }
+// }
 
 Future<bool> checkForUpdate(BuildContext context) async{
   return await FlutterAppCenter.checkForUpdate( 
     context,
-    Handler(),
+      ApkUpdateHandler(),
     // downloadUrlAndroid: '',
     dialog: {
       'title': 'App Update Avaiable',
